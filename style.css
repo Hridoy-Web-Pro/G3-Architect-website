@@ -96,6 +96,7 @@ nav, .banner{
 
 .team-content{
 margin-left: 80px;
+max-width: 530px;
 }
 
 main > section{
@@ -129,4 +130,17 @@ main > section{
   nav, nav ul{
     flex-direction: column;
   }
+}
+
+@media screen and (max-width:576px) {
+  .team-section{
+    flex-direction: column;
+  }
+  .team-images{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .team-content{
+    margin-left: 30px;
+  }
+  
 }
